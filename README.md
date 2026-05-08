@@ -38,6 +38,10 @@ creative-ai-experiments/
 
 A small Python experiment that maps moods to colors, feelings, and creative directions.
 
+### AI Review Script
+
+`experiments/review.py` — runs ChatGPT and Gemini reviews in parallel against any repo file, eliminating the manual copy-paste step when doing external reviews. Requires `OPENAI_API_KEY` and `GEMINI_API_KEY` in a local `.env` file.
+
 ### AI Development Workflow
 
 This repo includes an experiment called `ai-dev-workflow`.

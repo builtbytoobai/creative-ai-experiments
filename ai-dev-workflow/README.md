@@ -93,6 +93,28 @@ See `setup-checklist.md` for the full step-by-step setup process.
 
 ---
 
+## Automated external review (Option 1)
+
+The repo includes `experiments/review.py` — a script that calls ChatGPT and Gemini via their APIs in parallel, eliminating the manual copy-paste step.
+
+```bash
+# Install dependencies (one time)
+pip install -r requirements.txt
+
+# Review a file for both architecture and UX
+python experiments/review.py --context ai-dev-workflow/README.md --type both
+
+# Architecture review only (ChatGPT)
+python experiments/review.py --context ai-dev-workflow/README.md --type architecture
+
+# Save output to a file
+python experiments/review.py --context README.md --output reviews/output.txt
+```
+
+Requires `OPENAI_API_KEY` and `GEMINI_API_KEY` in a `.env` file. Copy `.env.example` to `.env` and add your keys.
+
+---
+
 ## Current status
 
 Documented and actively used as the workflow for builtbytoobai projects.
