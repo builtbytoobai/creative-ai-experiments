@@ -19,9 +19,13 @@ The goal is to test ideas quickly, document what I learn, and turn small concept
 ```bash
 creative-ai-experiments/
 │
-├── experiments/
-├── notes/
-├── assets/
+├── experiments/          # small creative AI scripts and prototypes
+├── notes/                # experiment notes and findings
+├── ai-dev-workflow/      # reusable AI-assisted development workflow blueprint
+│   ├── templates/        # copy these into new repos to adopt the workflow
+│   └── *.md              # workflow documentation and role guides
+├── .ai/                  # live workflow context for this repo
+├── CLAUDE.md             # Claude Code instructions for this repo
 ├── .gitignore
 └── README.md
 ```
@@ -55,7 +59,7 @@ See:
 
 ```txt
 ai-dev-workflow/
-´´´
+```
 
 ---
 

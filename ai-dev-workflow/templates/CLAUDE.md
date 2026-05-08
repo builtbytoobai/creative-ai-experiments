@@ -1,3 +1,7 @@
+> **Template** — Copy this file into your new repo root as `CLAUDE.md`. Fill in all `[PLACEHOLDER]` values before starting work with Claude Code. Delete this note when done.
+
+---
+
 # Claude Instructions
 
 This repository uses Claude Code as a development agent.
