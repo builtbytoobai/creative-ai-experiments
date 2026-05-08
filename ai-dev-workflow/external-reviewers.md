@@ -1,10 +1,21 @@
 # External Reviewers
 
-This workflow uses ChatGPT and Gemini as external reviewers.
+This workflow uses ChatGPT and Gemini as external reviewers alongside Claude Code.
 
-They do not replace Claude Code.
+They do not replace Claude Code. They improve the decisions made before and after implementation.
 
-They help the user make better decisions before and after implementation.
+---
+
+## Why external review matters
+
+Claude Code is an excellent builder but it works inside your repo and your current context. It can miss broader risks, roadmap misalignment, or product-level problems.
+
+External reviewers provide an outside perspective:
+
+- ChatGPT challenges the plan before any code is written.
+- Gemini asks whether the result is useful and clear to real users.
+
+Together they reduce the chance of building the wrong thing correctly.
 
 ---
 
@@ -64,7 +75,7 @@ Give me:
 
 ## Gemini Review Role
 
-Gemini is used as an external second-opinion reviewer.
+Gemini is used as an external second-opinion reviewer for product and UX.
 
 Use Gemini for:
 
@@ -140,6 +151,19 @@ Use Gemini when the question is:
 - What would make this more valuable?
 - What might confuse people?
 - Does this feel like something people would actually use?
+
+---
+
+## When not to use external reviewers
+
+Skip ChatGPT and Gemini for:
+
+- small documentation fixes with no architectural impact
+- quick typo or formatting corrections
+- tasks that are already clearly scoped and low risk
+- experiments that are throwaway and not heading toward production
+
+External review adds value when a decision is consequential. It adds friction when the task is already obvious.
 
 ---
 
