@@ -1,52 +1,37 @@
-# AI Development Workflow Experiment
+---
 
-This experiment documents a reusable AI-assisted development workflow for building software projects faster and more safely.
+## Reusable templates
 
-The goal is to create a repeatable setup where multiple AI tools support different parts of the development process.
+This experiment includes starter templates in:
 
-## Purpose
+```txt
+ai-dev-workflow/templates/
+```
 
-This workflow helps turn a project idea into a working repo using:
+Recommended use for a new repo:
 
-- Claude Code for implementation
-- GitHub Issues for task planning
-- Git branches and Pull Requests for safe changes
-- Claude GitHub Actions for automated assistance and PR review
-- ChatGPT for architecture, product, and roadmap review
-- Gemini for second-opinion review on UX, usefulness, and product direction
+1. Copy `templates/CLAUDE.md` into the repo root as `CLAUDE.md`.
+2. Create a `.ai/` folder.
+3. Copy these files into `.ai/`:
+   - `project-brief.md`
+   - `agent-workflow.md`
+   - `coding-rules.md`
+   - `task-template.md`
+4. Optionally copy:
+   - `issue-template.md`
+   - `pr-template.md`
+5. Replace all placeholder values like:
+   - `[PROJECT_NAME]`
+   - `[TECH_STACK]`
+   - `[TEST_COMMAND_1]`
+6. Install Claude GitHub Actions with:
 
-## Core idea
+```bash
+claude
+```
 
-Claude builds.
+Then inside Claude Code:
 
-ChatGPT reviews architecture and product direction.
-
-Gemini gives a second opinion on UX and usefulness.
-
-The user makes the final decision.
-
-## Workflow stages
-
-1. Capture the project idea
-2. Turn the idea into a GitHub Issue
-3. Ask Claude Code for an implementation plan
-4. Ask ChatGPT to review the plan
-5. Ask Gemini for a second opinion when relevant
-6. Let Claude Code implement one focused change
-7. Open a Pull Request
-8. Let Claude GitHub Actions review the PR
-9. Merge only after human approval
-
-## Files in this experiment
-
-- `roles.md` — defines the role of each AI tool
-- `workflow.md` — explains the full development workflow
-- `issue-to-pr-flow.md` — documents the GitHub Issue → Branch → PR process
-- `external-reviewers.md` — explains how ChatGPT and Gemini are used
-- `setup-checklist.md` — reusable setup checklist for new repos
-
-## Current status
-
-Experimental workflow documentation.
-
-Tested first on the `AI-Lyric-Generator` repository.
+```txt
+/install-github-app
+```
