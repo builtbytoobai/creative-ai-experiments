@@ -25,6 +25,16 @@ Use this workflow:
 5. Suggest a clear commit message.
 6. Wait for user approval before committing.
 
+## Verification
+
+If automated tests exist, run them before suggesting a commit.
+
+If no automated tests exist, manually verify:
+
+- The intended behavior works as expected.
+- No regressions in related features.
+- Explain what was checked and how.
+
 ## Review checklist
 
 Before finalizing a task, check:
