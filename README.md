@@ -28,6 +28,14 @@ creative-ai-experiments/
 
 ---
 
+## 🔬 Current Experiments
+
+### Mood Color Mapper
+
+A small Python experiment that maps moods to colors, feelings, and creative directions.
+
+---
+
 ## 🧪 Experiment Ideas
 
 - AI-assisted writing tools
