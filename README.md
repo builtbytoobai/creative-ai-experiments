@@ -34,6 +34,29 @@ creative-ai-experiments/
 
 A small Python experiment that maps moods to colors, feelings, and creative directions.
 
+### AI Development Workflow
+
+This repo includes an experiment called `ai-dev-workflow`.
+
+It documents a reusable AI-assisted development workflow for future repos and app ideas.
+
+The workflow uses:
+
+- Claude Code as builder and implementation agent
+- GitHub Issues for task planning
+- Git branches and Pull Requests for safe changes
+- Claude GitHub Actions for `@claude` issue/PR assistance and automatic PR review
+- ChatGPT for architecture, product, and roadmap review
+- Gemini for UX, usefulness, and second-opinion review
+
+The goal is to make it faster to go from idea → repo → issue → implementation → review → merge.
+
+See:
+
+```txt
+ai-dev-workflow/
+´´´
+
 ---
 
 ## 🧪 Experiment Ideas
